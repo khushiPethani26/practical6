@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Child Properties</title>
+
+    <style>
+        .container {
+            display: flex;
+   
+            height: 400px;
+            border: 3px solid black;
+            align-items: center;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: rgb(217, 243, 252);
+            border: 2px solid rgb(9, 9, 17);
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+        .box1 {
+       
+            flex-grow: 1;
+            flex-basis: 200px ;
+            flex-shrink: 10;         
+        }
+         .box2 {
+            flex-grow:1;
+            align-self: flex-start;
+        }
+
+        .box3 {
+           flex-grow: 2;
+        }
+
+         .box4 {
+            flex-grow: 2;
+        }
+        .box5 {
+       
+            flex-grow: 1;
+        }
+         .box6{
+            flex-shrink: 9;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <h2>Flexbox Child Properties</h2>
+
+    <div class="container">
+
+        <div class="box box1">
+            <img src="Nature.png" height="100px" width="100px"/>
+        </div>
+        <div class="box box2"><img src="Nature.png" height="100px" width="100px"/></div>
+        <div class="box box3"><img src="Nature.png" height="100px" width="100px"/></div>
+        <div class="box box4"><img src="Nature.png" height="100px" width="100px"/></div>
+        <div class="box box5"><img src="Nature.png" height="100px" width="100px"/></div>
+        <div class="box box6"><img src="Nature.png" height="100px" width="100px"/></div>
+
+    </div>
+
+</body>
+</html>
